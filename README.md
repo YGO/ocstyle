@@ -1,12 +1,42 @@
 ocstyle
 =======
 
-Objective-C style checker
+Objective-C style checker. This branch is a modified version to specified style (ignore line length check and change style for MissingSemicolon).
 
 # Installation
 
 ```
-pip install ocstyle
+pip install git+https://github.com/YGO/ocstyle.git@master#egg=ocstyle
+```
+
+# Notes
+1. Change maxLineLength to 9999.
+2. Change rule "MissingSemicolon, MissingNewline" with new style.
+Original ocstyle has a style as
+```objc
+@implementation SomeClass
+
++(void) someMessage:(NSString*)subdomain;
+{
+    NSString *ShouldStartLowerCase;
+    // ...
+}
+
+@end
+```
+
+We changed to apply new style as:
+
+```objc
+@implementation SomeClass
+
++(void) someMessage:(NSString*)subdomain
+{
+    NSString *ShouldStartLowerCase;
+    // ...
+}
+
+@end
 ```
 
 # Example
