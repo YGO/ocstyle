@@ -17,8 +17,7 @@ Original ocstyle has a style as
 ```objc
 @implementation SomeClass
 
-+(void) someMessage:(NSString*)subdomain;
-{
++(void) someMessage:(NSString*)subdomain; {
     NSString *ShouldStartLowerCase;
     // ...
 }
