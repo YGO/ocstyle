@@ -47,7 +47,8 @@ If you have a file called `test.m` like this:
 ```objc
 @implementation SomeClass
 
-+(void) someMessage:(NSString*)subdomain {
++(void) someMessage:(NSString*)subdomain 
+{
     NSString *ShouldStartLowerCase;
     // ...
 }
