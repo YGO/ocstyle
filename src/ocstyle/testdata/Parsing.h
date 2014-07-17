@@ -56,7 +56,6 @@
 @property (readonly) SCNavigationBar *fakeBackground ; // EXPECT: ExtraSpace, ExpectedPropertyDocInHeader
 
 // This line is just the right size.....................................................................................
-// EXPECT+1:LineTooLong
 // This line is too long.................................................................................................
 
 /**

@@ -47,27 +47,15 @@
 }
 
 
- // EXPECT+1: MissingSemicolon, MissingNewline
+ // EXPECT+1: MissingNewline
 + (void)badFormat:(NSString *)subdomain{
 }
 
-+ (void)badFormat:(NSString *)subdomain;
- { // EXPECT: ExtraSpace
-}
-
-
-// EXPECT+1: ExtraSpace
-+ (void)badFormat:(NSString *)subdomain ;
-{
-}
-
-
-// EXPECT+1: MissingSemicolon, MissingNewline
+// EXPECT+1: MissingNewline
 + (void)badFormat:(NSString *)subdomain {
 }
 
 
-// EXPECT+1: MissingNewline
 + (void)badFormat:(NSString *)subdomain; {
 }
 
